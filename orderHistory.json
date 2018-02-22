@@ -1,45 +1,43 @@
 {
   "incompleted_items": [
     {
-      "imageURL": "img/buyerMenuPic.png",
-      "name": "Imcompleted Food Name",
-      "total": "$x.xx",
-      "pickupTime": "xx:xx",
-      "address": "9348 Djsidqj Drive, Apt num123243"
-    },
-    {
-      "imageURL": "img/buyerMenuPic.png",
-      "name": "Imcompleted Food Name",
-      "total": "$x.xx",
-      "pickupTime": "xx:xx",
-      "address": "9348 Djsidqj Drive, Apt num123243"
+      "name": "Italian Spaghetti",
+      "imageURL": "img/foodPics/Spaghetti01.jpg",
+      "price": "$5.99",
+      "distance": "0.2 mi",
+      "seller": "Minglin Cao",
+      "sellerRating": "3.1",
+      "pickupTime": "16:30",
+      "learn": "No",
+      "pickupLocation": "7165 Gilman Drive, apt 9120",
+      "description": "Homemade Italian Spaghetti. 2 servings."
     }
   ],
 
   "completed_items": [
     {
-      "name": "Completed Food Name",
-      "imageURL": "img/buyerMenuPic.png",
-      "price": "$x.xx",
-      "distance": "x.x mi",
-      "sellerRating": "x.x",
-      "pickupTime": "xx:xx"
+      "name": "Japanese Crab Legs",
+      "imageURL": "img/foodPics/Crab01.jpg",
+      "price": "$6.99",
+      "distance": "1.9 mi",
+      "seller": "Tiantao Shen",
+      "sellerRating": "4.5",
+      "pickupTime": "18:00",
+      "learn": "Yes",
+      "pickupLocation": "2142 Scholar Ln, apt 1234",
+      "description": "Delicious Japanses Crab Legs"
     },
     {
-      "name": "Completed Food Name",
-      "imageURL": "img/buyerMenuPic.png",
-      "price": "$x.xx",
-      "distance": "x.x mi",
-      "sellerRating": "x.x",
-      "pickupTime": "xx:xx"
-    },
-    {
-      "name": "Completed Food Name",
-      "imageURL": "img/buyerMenuPic.png",
-      "price": "$x.xx",
-      "distance": "x.x mi",
-      "sellerRating": "x.x",
-      "pickupTime": "xx:xx"
+      "name": "Egg Salad",
+      "imageURL": "img/foodPics/Salad01.jpg",
+      "price": "$2.99",
+      "distance": "3.2 mi",
+      "seller": "Zhenyi Cao",
+      "sellerRating": "4.0",
+      "pickupTime": "17:00",
+      "learn": "Yes",
+      "pickupLocation": "8920 Cognitive St, apt 5321",
+      "description": "Salad with egg"
     }
   ]
 }

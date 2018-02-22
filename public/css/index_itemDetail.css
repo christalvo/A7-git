@@ -1,3 +1,6 @@
+.details {
+		padding: 25px;
+}
 
 #myHeader {
 	background-color: white;
@@ -12,7 +15,7 @@
 
 img {
 max-width: 160;
-max-height: 160;	
+max-height: 160;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -65,4 +68,8 @@ button {
 #orderNumbers {
 	padding-left: 5px;
 	font-size: 30px;
+}
+
+textarea {
+	border: 1px solid black;
 }

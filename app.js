@@ -23,6 +23,7 @@ var seller_itemDetail = require('./routes/seller_itemDetail');
 var seller_itemPhotos = require('./routes/seller_itemPhotos');
 var seller_addMenu = require('./routes/seller_addMenu');
 var add = require('./routes/add');
+var order = require('./routes/order');
 
 // Example route
 // var user = require('./routes/user');
@@ -76,6 +77,7 @@ app.get('/seller_addMenu', seller_addMenu.view);
 app.get('/', index.view);
 app.get('/buyer_home', buyer_home.view);
 app.get('/add', add.add);
+app.get('/order', order.add);
 
 // Example route
 // app.get('/users', user.list);

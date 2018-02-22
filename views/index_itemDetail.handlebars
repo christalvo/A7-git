@@ -9,6 +9,9 @@
 
  		<!-- Use internet source for icons-->
  		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<script>var i = location.href.substring(location.href.indexOf("?")+1);
+	  console.log(i);</script>
 	</head>
 
 	<body>
@@ -51,7 +54,7 @@
 
  			<table>
  				<td>
- 					<h3 class="info">- Offered by: XXX XXXXX</h3>
+ 					<h3 class="info">- Offered by: <p>{{seller}}</p></h3>
  				</td>
  				<td id="callAndText">
  					<i class="material-icons" style="font-size:50px;">call</i>
@@ -62,19 +65,16 @@
  			<table>
  				<td>
  					<h3 class="info">- Pickup at:</h3>
- 					<p class="text">9434 Gilman Drive, UC San Diego. The small town house by the Marshall Field</p>
+ 					<p class="text">{{pickupLocation}}</p>
  				</td>
  				<td>
  					<div class="topIcon"><i class="material-icons" style="font-size:50px;">location_on</i></div>
  				</td>
  			</table>
- 			<h3 class="info">- Pickup Time: xx:xx</h3>
+ 			<h3 class="info">- Pickup Time: {{pickupTime}}</h3>
  			<h3 class="info">- Come and Learn to Cook This Item Allowed: Yes</h3>
  			<h3 class="info">- Description: </h3>
- 			<p class="text">
- 				This sdihd weu asdf aouf ahfee. efiuaf dsoufasiduf, sdijf. zzf, dfsf,dsf.
- 				Hdijf dfj dsfj s fdh fj, fdsfgn fdsjj, sdnff fsf. sdjfi, dsfj, djfj, shei, sjfis asdjf.
- 			</p>
+ 			<p class="text">{{description}}</p>
 
 			<div id="myFooter" class="footer">
  			<table>
@@ -98,11 +98,9 @@
  					<strong>$X.XX</strong>
  				</td>
  				<td>
-                              <a href="./buyer_home">
- 					<button type="button">
- 						<strong>PLACE<br>ORDER</strong>
- 					</button>
-                              </a>
+        <form id="placeOrder" role="form" method="get" action="/order">
+ 					<input type="submit" id="submitBtn" class="btn btn-default" value="PLACE ORDER"></input>
+				</form>
  				</td>
  			</table>
 			</div>

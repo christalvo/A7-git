@@ -22,10 +22,11 @@
  				</table>
  			</div>
 
+			<div class="content">
 			<h3>Incompleted Orders</h3>
 			<div id="incompleted">
 			{{#each incompleted_items}}
-			<div class = "items">
+			<div class = "history">
 				<table>
 					<tr>
 						<td rowspan="3">
@@ -46,7 +47,7 @@
       				</tr>
 					<tr>
 						<td colspan="2">
-							<p><Strong>Pickup Address: </Strong>{{address}}</p>
+							<p><Strong>Pickup Address: </Strong>{{pickupLocation}}</p>
 						</td>
 					</tr>
 				</table>
@@ -58,7 +59,7 @@
 			<h3>Completed Orders</h3>
 			<div id="completed">
 			{{#each completed_items}}
-			<div class = "items">
+			<div class = "history">
 				<table>
 					<tr>
 						<td rowspan="2">
@@ -82,6 +83,7 @@
 			</div>
 			<button>Rate Seller</button>
 			{{/each}}
+			</div>
 			</div>
 
 			<script src="/js/jquery-1.11.0.js"></script>

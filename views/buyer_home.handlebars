@@ -1,5 +1,9 @@
 <html>
 <head>
+
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/bootstrap.js"></script>
+
 	<title>Buyer Homepage</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,13 +34,14 @@
 
 		<div class="content">
 		{{#each items}}
-		<div class = "items">
+
+		<div class = "items" id = "{{@index}}">
 			<a href="./index_itemDetail">
 			<table>
 				<tr>
 					<td rowspan="2">
 								<div id="itemMainPic">
-      					<img src={{imageURL}}>
+      						<img src={{imageURL}}>
 								</div>
       				</td>
       				<td colspan="2">
@@ -62,8 +67,6 @@
 	</div>
 
 
-	<script src="/js/jquery-1.11.0.js"></script>
-	<script src="/js/bootstrap.js"></script>
 	<script src="/js/userHome.js"></script>
 </body>
 </html>
