@@ -20,16 +20,17 @@
  				</table>
  			</div>
 
+			{{#each info}}
  			<div class="details">
 			<div><table>
  				<td>
- 					<div><img src="/img/accountPic.png" id="accountPic"></div>
+ 					<div><img id="photo" src={{imageURL}}></div>
  				</td>
  				<td>
  					<table>
 					<tr>
       					<td colspan="2">
-      						<h4 class = "name">User Name Here</h4>
+      						<h4 class = "name">{{name}}</h4>
       					</td>
       					<td></td>
       				</tr>
@@ -43,7 +44,7 @@
  				</td>
  			</table></div>
 
-			<div id="payment"><table>	
+			<div id="payment"><table>
 				</tr>
       				<td colspan="2">
       					<h4>Saved Payment Methods</h4>
@@ -58,11 +59,18 @@
     				</td>
   				</tr>
  			</table></div>
+			{{/each}}
 
 			<div id="edit">
 				<i class="material-icons" style="font-size:50px;">edit</i>
 			</div>
-			
+
 		</div>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		{{> facebook}}
+		<script src="/js/facebook.js"></script>
+		<script src="/js/jquery-1.11.0.js"></script>
 	</body>
 </html>

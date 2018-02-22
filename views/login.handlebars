@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Login</title>	
+        <title>Login</title>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link href="/css/bootstrap.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 
     <body>
         <div id="container">
-        
+
         <h1 style="text-align: center; color: #2d862d; margin: 7%;" >Green for All</h1>
 
         <div style="text-align: center; background-color: whitesmoke; padding:20px;">
@@ -27,20 +27,34 @@
                 <button style="border: 2px solid black; margin-top: 20px">Login</button>
             </a>
         </div>
-        
+
         <h4 style="text-align: center;">or</h4>
 
         <div style="text-align: center; background-color: whitesmoke; padding:20px;">
             <div id="logins">
-                <a href="./buyer_home">
-                    <button style="background-color: steelblue; margin: 10px; padding: 20px; font-size: 20px; color: white;">Login with Facebook</button>
-                </a>
-                <br>
-                <a href="./buyer_home">
-                    <button style="background-color: firebrick; margin: 10px; padding: 20px; font-size: 20px; color: white">Login with Google</button>
-                </a>
+              <p class="facebookLogin">
+        				Please login through Facebook
+        				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        				</fb:login-button>
+        			</p>
+              <div align="center" id="facebookPhoto" class="profile">
+                <img id="photo" class='img-responsive' width="300px" src="img/accountPic.png" />
+
+                <a href="buyer_home"><button hidden="hidden" class="continueFB" style="border: 2px solid black; margin-top: 20px">
+                  Continue as <label class="userName">userName</label>
+                </button></a>
+
+              </div>
+
             </div>
         </div>
         </div>
+
+
+	      <script src="https://code.jquery.com/jquery.js"></script>
+	      <script src="/js/bootstrap.min.js"></script>
+
+        {{> facebook}}
+      	<script src="/js/facebook.js"></script>
     </body>
 </html>
