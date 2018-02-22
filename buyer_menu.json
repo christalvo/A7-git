@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "Chicken Teriyaki",
+      "imageURL": "img/foodPics/ChickenTeriyaki01.jpg",
+      "price": "$3.99",
+      "distance": "0.8 mi",
+      "sellerRating": "3.4",
+      "pickupTime": "18:30",
+      "learn": "No"
+    },{
+      "name": "Japanese Crab Legs",
+      "imageURL": "img/foodPics/Crab01.jpg",
+      "price": "$6.99",
+      "distance": "1.9 mi",
+      "sellerRating": "4.5",
+      "pickupTime": "18:00",
+      "learn": "Yes"
+    },{
+      "name": "Mango Smoothie",
+      "imageURL": "img/foodPics/Smoothie01.jpg",
+      "price": "$1.99",
+      "distance": "0.1 mi",
+      "sellerRating": "2.9",
+      "pickupTime": "13:20",
+      "learn" : "No"
+    },{
+      "name": "Egg Salad",
+      "imageURL": "img/foodPics/Salad01.jpg",
+      "price": "$2.99",
+      "distance": "3.2 mi",
+      "sellerRating": "4.0",
+      "pickupTime": "17:00",
+      "learn": "Yes"
+    }
+  ]
+}

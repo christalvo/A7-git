@@ -1,0 +1,12 @@
+{
+  "seller_items": [
+    {
+      "name": "Mango Smoothie",
+      "imageURL": "img/foodPics/Smoothie01.jpg",
+      "price": "$1.99",
+      "orderNumbers": "4",
+      "pickupTime": "13:20",
+      "learn" : "No"
+    }
+  ]
+}

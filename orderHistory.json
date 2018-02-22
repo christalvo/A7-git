@@ -1,0 +1,45 @@
+{
+  "incompleted_items": [
+    {
+      "imageURL": "img/buyerMenuPic.png",
+      "name": "Imcompleted Food Name",
+      "total": "$x.xx",
+      "pickupTime": "xx:xx",
+      "address": "9348 Djsidqj Drive, Apt num123243"
+    },
+    {
+      "imageURL": "img/buyerMenuPic.png",
+      "name": "Imcompleted Food Name",
+      "total": "$x.xx",
+      "pickupTime": "xx:xx",
+      "address": "9348 Djsidqj Drive, Apt num123243"
+    }
+  ],
+
+  "completed_items": [
+    {
+      "name": "Completed Food Name",
+      "imageURL": "img/buyerMenuPic.png",
+      "price": "$x.xx",
+      "distance": "x.x mi",
+      "sellerRating": "x.x",
+      "pickupTime": "xx:xx"
+    },
+    {
+      "name": "Completed Food Name",
+      "imageURL": "img/buyerMenuPic.png",
+      "price": "$x.xx",
+      "distance": "x.x mi",
+      "sellerRating": "x.x",
+      "pickupTime": "xx:xx"
+    },
+    {
+      "name": "Completed Food Name",
+      "imageURL": "img/buyerMenuPic.png",
+      "price": "$x.xx",
+      "distance": "x.x mi",
+      "sellerRating": "x.x",
+      "pickupTime": "xx:xx"
+    }
+  ]
+}
