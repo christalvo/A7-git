@@ -23,21 +23,21 @@
  			<div class="details">
  			<table>
  				<td>
- 					<div id="itemPic"><img src="/img/buyerMenuPic.png"></div>
+ 					<div id="itemPic"><img src={{imageURL}}></div>
  					<a href="seller_itemPhotos">more photos ...</a>
  				</td>
  				<td>
  					<table>
 					<tr>
       					<td colspan="2">
-      						<h4 class = "item_name">Food Name Here</h4>
+      						<h4 class = "item_name">{{name}}</h4>
       					</td>
       					<td></td>
       				</tr>
       				<tr>
 						<td>
-      						<p>Price: <strong>$5</strong></p>
-      						<p>Pickup Time: <Strong>6:30 PM</Strong></p>
+      						<p>Price: <strong>{{price}}</strong></p>
+      						<p>Pickup Time: <Strong>{{pickupTime}}</Strong></p>
       					</td>
       				</tr>
 					</table>
@@ -77,18 +77,17 @@
  			<table>
  				<td>
  					<h3 class="info">- Pickup at:</h3>
- 					<p class="text">9434 Gilman Drive, UC San Diego. The small town house by the Marshall Field</p>
+ 					<p class="text">{{pickupLocation}}</p>
  				</td>
  				<td>
  					<div class="topIcon"><i class="material-icons" style="font-size:50px;">location_on</i></div>
  				</td>
  			</table>
- 			<h3 class="info">- Pickup Time: xx:xx</h3>
- 			<h3 class="info">- Come and Learn to Cook This Item Allowed: Yes</h3>
+ 			<h3 class="info">- Pickup Time: {{pickupTime}}</h3>
+ 			<h3 class="info">- Come and Learn to Cook This Item Allowed: {{learn}}</h3>
  			<h3 class="info">- Description: </h3>
  			<p class="text">
- 				This sdihd weu asdf aouf ahfee. efiuaf dsoufasiduf, sdijf. zzf, dfsf,dsf.
- 				Hdijf dfj dsfj s fdh fj, fdsfgn fdsjj, sdnff fsf. sdjfi, dsfj, djfj, shei, sjfis asdjf.
+ 				{{description}}
  			</p>
 
  			<table>
@@ -96,16 +95,15 @@
  					- Order Numbers:
  				</th>
  				<td id="orderNumbers">
- 					<strong>4</strong>
+ 					<strong>{{orderNumbers}}</strong>
  				</td>
  			</table>
 
  			<table>
  				<td>
- 					<a href="seller_home">
- 						<button type="button">
- 							<strong>DELETE</strong>
- 						</button>
+					<form id="delete" role="form" method="get" action="/delete">
+						<input type="submit" id="submitBtn" class="btn btn-default" value="DELETE"></input>
+					</form>
  					</a>
  				</td>
  			</table>

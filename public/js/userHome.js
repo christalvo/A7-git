@@ -37,10 +37,25 @@ function myFunction() {
   }
 }
 
+function goToSellDetail(e) {
+	e.preventDefault();
+	var projectID = $(this).closest('.sellerItems').attr('id');
+	console.log(projectID);
+	window.location.href = "./seller_itemDetail?id=" + projectID;
+}
+
+function deleteItem(e){
+	e.preventDefault();
+	var projectID = window.location.href.substring(window.location.href.indexOf('?'));
+	window.location.href = "./deleteItem" + projectID;
+}
+
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
 	$(".items").click(goToDetail);
 	$("#placeOrder").click(order);
+	$(".sellerItems").click(goToSellDetail);
+	$("#delete").click(deleteItem);
 }

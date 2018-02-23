@@ -2,8 +2,10 @@
 /*
  * GET home page.
  */
-var data = require('../buyer_menu.json');
+var data = require('../seller_menu.json');
 
 exports.view = function(req, res){
-  res.render('seller_itemDetail', data);
+  var id = req.query.id;
+  id = parseInt(id);
+  res.render('seller_itemDetail', data.seller_items[id]);
 };
