@@ -14,6 +14,7 @@ var index_itemDetail = require('./routes/index_itemDetail');
 var buyer_itemPhotos = require('./routes/buyer_itemPhotos');
 var buyer_orderHistory = require('./routes/buyer_orderHistory');
 var account = require('./routes/account');
+var account2 = require('./routes/account2');
 var buyer_orderDetail = require('./routes/buyer_orderDetail');
 var seller_addFromHistory = require('./routes/seller_addFromHistory');
 var seller_addFromHistoryDetail = require('./routes/seller_addFromHistoryDetail');
@@ -25,6 +26,9 @@ var seller_addMenu = require('./routes/seller_addMenu');
 var add = require('./routes/add');
 var order = require('./routes/order');
 var deleteItem = require('./routes/deleteItem');
+var buyer_orderHistory2 = require('./routes/buyer_orderHistory2');
+var edit = require('./routes/edit');
+var editted = require('./routes/editted');
 
 // Example route
 // var user = require('./routes/user');
@@ -57,8 +61,10 @@ app.get('/', index.view);
 app.get('/buyer_itemPhotos', buyer_itemPhotos.view);
 app.get('/', index.view);
 app.get('/buyer_orderHistory', buyer_orderHistory.view);
+app.get('/buyer_orderHistory2', buyer_orderHistory2.view);
 app.get('/', index.view);
 app.get('/account', account.view);
+app.get('/account2', account2.view);
 app.get('/', index.view);
 app.get('/buyer_orderDetail', buyer_orderDetail.view);
 app.get('/', index.view);
@@ -79,7 +85,9 @@ app.get('/', index.view);
 app.get('/buyer_home', buyer_home.view);
 app.get('/add', add.add);
 app.get('/order', order.add);
-app.get('/deleteItem', deleteItem.delete)
+app.get('/deleteItem', deleteItem.delete);
+app.get('/edit', edit.view);
+app.get('/editted', editted.change);
 
 // Example route
 // app.get('/users', user.list);

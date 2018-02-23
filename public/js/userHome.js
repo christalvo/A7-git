@@ -50,6 +50,18 @@ function deleteItem(e){
 	window.location.href = "./deleteItem" + projectID;
 }
 
+function edit(e) {
+	e.preventDefault();
+	window.location.href = "./edit";
+}
+
+function complete(e) {
+	e.preventDefault();
+	var projectID = $(this).closest('.incompletedOrder').attr('id');
+	console.log(projectID);
+	window.location.href = "./buyer_orderHistory2?id=" + projectID;
+}
+
 /*
  * Function that is called when the document is ready.
  */
@@ -58,4 +70,6 @@ function initializePage() {
 	$("#placeOrder").click(order);
 	$(".sellerItems").click(goToSellDetail);
 	$("#delete").click(deleteItem);
+	$("#edit").click(edit);
+	$(".complete").click(complete);
 }

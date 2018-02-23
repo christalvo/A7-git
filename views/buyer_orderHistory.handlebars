@@ -18,15 +18,16 @@
 			<div id="myHeader" class="header">
  				<table>
  					<td><div class="topIcon"><a href="./buyer_home"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
- 					<td><h2>Order History</h2></td>
+ 					<td><h2>Order In Process</h2></td>
  				</table>
  			</div>
 
 			<div class="content">
-			<h3>Incompleted Orders</h3>
+			<h3>incompleted orders</h3>
+
 			<div id="incompleted">
 			{{#each incompleted_items}}
-			<div class = "history">
+			 <div class = "incompletedOrder" id="{{@index}}">
 				<table>
 					<tr>
 						<td rowspan="3">
@@ -51,39 +52,20 @@
 						</td>
 					</tr>
 				</table>
+				<button class="complete">Complete Order</button>
 			</div>
-			<button>Complete Order</button>
 			{{/each}}
 			</div>
 
-			<h3>Completed Orders</h3>
-			<div id="completed">
-			{{#each completed_items}}
-			<div class = "history">
-				<table>
-					<tr>
-						<td rowspan="2">
-      						<img src="{{imageURL}}">
-      					</td>
-      					<td colspan="2">
-      							<h4 class = "item_name">{{name}}</h4>
-      					</td>
-      					<td></td>
-      				</tr>
-      					<td>
-      						<p><Strong>Price: </strong>{{price}}</p>
-      						<p><Strong>Distance: </Strong>{{distance}}</p>
-      					</td>
-      					<td>
-      						<p><Strong>Seller Rating: </Strong>{{sellerRating}}</p>
-      						<p><Strong>Pickup Time: </Strong>{{pickupTime}}</p>
-      					</td>
-      				<tr>
-				</table>
-			</div>
-			<button>Rate Seller</button>
-			{{/each}}
-			</div>
+			<hr>
+
+			<a href="buyer_orderHistory2">
+				<div id="viewCompleted">
+						<center><h4>View Completed Orders</h4></center>
+						<center><i class="material-icons" style="font-size:50px;">playlist_add_check</i></center>
+				</div>
+			</a>
+
 			</div>
 
 			<script src="/js/jquery-1.11.0.js"></script>

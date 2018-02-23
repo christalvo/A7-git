@@ -8,7 +8,7 @@ exports.add = function(req, res) { 
 	var price = req.query.price;
 	var pickupTime = req.query.pickupTime;
 	var learn = req.query.learn;
-	
+
 	var newSellerItem =
 		{
 		'name': nameToShow,

@@ -15,11 +15,11 @@
 		<div class = "container">
  			<div class="header" id="myHeader">
  				<table>
- 					<td><div class="topIcon"><a href="./buyer_home"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
- 					<td><h2>Account</h2></td>
+ 					<center><td><h2>Account</h2></td></center>
  				</table>
  			</div>
 
+			<form id="editAccount" role="form" method="get" action="/editted">
 			{{#each info}}
  			<div class="details">
 			<div><table>
@@ -30,14 +30,23 @@
  					<table>
 					<tr>
       					<td colspan="2">
-      						<h4 class = "name">{{name}}</h4>
+									<div class="form-group">
+									<label for="name">Username:</label>
+				     	 		<input type="text" class="form-control" id="name" value ={{name}} name="name">
+				    			</div>
       					</td>
       					<td></td>
       				</tr>
       				<tr>
       					<td>
-      						<p><Strong>Phone: </strong>{{phone}}</p>
-      						<p><Strong>Email: </Strong>{{email}}</p>
+									<div class="form-group">
+									<label for="phone">Phone:</label>
+				     	 		<input type="text" class="form-control" id="phone" value ={{phone}} name="phone">
+				    			</div>
+									<div class="form-group">
+									<label for="email">Email:</label>
+				     	 		<input type="text" class="form-control" id="email" value ={{email}} name="email">
+				    			</div>
       					</td>
       				</tr>
 					</table>
@@ -53,18 +62,24 @@
       			</tr>
     			<tr>
     				<td>
-  						<p><Strong>Visa: </strong>{{visa}}</p>
-      				<p><Strong>Paypal: </Strong>{{paypal}}</p>
-							<p><Strong>Venmo: </Strong>{{venmo}}</p>
+							<div class="form-group">
+							<label for="visa">Visa:</label>
+							<input type="text" class="form-control" id="visa" value ={{visa}} name="visa">
+							</div>
+							<div class="form-group">
+							<label for="paypal">Paypal:</label>
+							<input type="text" class="form-control" id="paypal" value ={{paypal}} name="paypal">
+							</div>
+							<div class="form-group">
+							<label for="name">Venmo:</label>
+							<input type="text" class="form-control" id="venmo" value ={{venmo}} name="venmo">
+							</div>
     				</td>
   				</tr>
  			</table></div>
 			{{/each}}
 
-			<div id="edit">
-				<i class="material-icons" style="font-size:50px;">edit</i>
-			</div>
-
+			<input type="submit" id="check" class="btn btn-default" value="Complete" style="margin-left: 20px"></input>
 		</div>
 
 		<script src="https://code.jquery.com/jquery.js"></script>

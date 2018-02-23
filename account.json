@@ -1,8 +1,13 @@
 {
   "info": [
     {
-      "name": "User Name",
-      "imageURL": "img/accountPic.png"
+      "name": "Username",
+      "imageURL": "img/accountPic.png",
+      "phone": "888-888-8888",
+      "email": "abc123@ucsd.edu",
+      "visa": "812319579123474",
+      "paypal": "abc123@ucsd.edu",
+      "venmo": "jaeiogiaweof"
     }
   ]
 }
